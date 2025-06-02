@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004080;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  display: flex; /* Habilita flex dentro do link */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-weight: bold;
+
+  min-width: 100px; /* largura mínima para manter formato de botão */
+  height: 40px;     /* altura fixa para garantir alinhamento vertical */
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #005bb5;
+  border-color: #ffffff;
+}
+
+main {
+  padding: 20px;
+}
