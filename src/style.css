@@ -1,11 +1,22 @@
+/*
+Paleta de Cores:
+#f2f2f2
+#348e91
+#1c5052
+#213635
+#0a0c0d
+*/
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
+  color: #0a0c0d;
 }
 
 header {
-  background-color: #004080;
+  background-color: #213635;
   padding: 15px;
 }
 
@@ -20,8 +31,8 @@ nav a {
   align-items: center; /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
   
-  background-color: #0066cc;
-  color: white;
+  background-color: #1c5052;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -30,15 +41,61 @@ nav a {
   font-weight: bold;
 
   min-width: 100px; /* largura mínima para manter formato de botão */
-  height: 40px;     /* altura fixa para garantir alinhamento vertical */
+  height: 30px;     /* altura fixa para garantir alinhamento vertical */
   text-align: center;
 }
 
 nav a:hover {
-  background-color: #005bb5;
+  background-color: #348e91;
   border-color: #ffffff;
 }
 
 main {
   padding: 20px;
 }
+
+h1 {
+  text-align: center;
+  color: #348e91;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+}
+
+h2 {
+  color: #1c5052;
+  font-size: 2em;
+  margin-top: 20px;
+  font-family: 'Lora', serif;
+}
+
+q.highlight {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #213635;
+  border-left: 5px solid #348e91;
+  font-style: italic;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+cite.highlight {
+  display: block;
+  text-align: right;
+  color: #348e91;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+p {
+  text-align: justify;
+}
+
+p.FraseDeEfeito {
+  font-size: 1 em;
+  color: #00b1c9;
+  font-style: oblique;
+  margin: 20px 0;
+}
+
