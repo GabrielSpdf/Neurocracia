@@ -54,11 +54,16 @@ main {
   padding: 20px;
 }
 
-article{
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+article {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  font-size: 1.1em;
+  line-height: 1.75;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: justify;
 }
 
 h1 {
@@ -210,18 +215,6 @@ p.FraseDeEfeito {
 .popup.fly {
   background-color: rgba(255, 255, 0, 0.7);
   color: #ff0000;
-}
-
-article {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  font-size: 1.1em;
-  line-height: 1.75;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: justify;
 }
 
 /* Keyframes */
