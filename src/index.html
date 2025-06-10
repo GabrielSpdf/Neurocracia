@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Neurocracia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <nav>
       <a href="index.html">Home Page</a>
@@ -20,8 +18,21 @@
   </header>
 
   <main>
-    <h1>Bem-vindo à Página Inicial</h1>
-    <p>Essa é a página principal do site. Use o menu acima para navegar pelas outras seções.</p>
+    <h1>Neurocracia - Artigos</h1>   
+    <div class="carousel">
+      <div class="slides">
+        <a href="brainrot.html" title="Brainrot"><img src="img/brainrot.jpg" alt="Brainrot"></a>
+        <a href="tendencias.html" title="Tendências Tecnológicas"><img src="img/tendencias.jpg" alt="Tendências"></a>
+        <a href="equipe.html" title="Equipe"><img src="img/equipe.jpg" alt="Equipe"></a>
+        <a href="bibliografia.html" title="Bibliografia"><img src="img/bibliografia.jpg" alt="Bibliografia"></a>
+      </div>
+      <div class="indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
   </main>
 
   <script src="script.js"></script>
