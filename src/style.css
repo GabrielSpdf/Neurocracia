@@ -158,4 +158,65 @@ p.FraseDeEfeito {
   background-color: #333;
 }
 
+/*Pagina da equipe*/
+.team-container {
+  max-width: 900px;
+  margin: 40px auto; 
+}
+
+.team-member {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 40px; 
+  overflow: hidden; 
+  padding: 0; 
+}
+
+.team-member.reverse {
+  flex-direction: row-reverse;
+}
+
+.member-photo {
+  flex: 1; 
+  min-width: 250px;
+  align-self: stretch; 
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.member-info {
+  flex: 2; 
+  padding: 30px;
+}
+
+.member-info h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #1c5052;
+  font-size: 1.1em;
+  margin-top: -15px; /* Puxa para mais perto do nome */
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .team-member,
+  .team-member.reverse {
+    flex-direction: column;
+  }
+
+  .member-info {
+    text-align: center;
+  }
+  
+  .member-info p {
+    text-align: center; 
+  }
+}
 
