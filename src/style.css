@@ -54,6 +54,13 @@ main {
   padding: 20px;
 }
 
+article{
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+}
+
 h1 {
   text-align: center;
   color: #348e91;
