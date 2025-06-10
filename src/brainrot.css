@@ -155,7 +155,7 @@ p.FraseDeEfeito {
   z-index: 99;
 }
 
-/*.popup.dance {
+.popup.dance {
 
 }
 
@@ -165,7 +165,7 @@ p.FraseDeEfeito {
 
 .popup.spin {
 
-}*/
+}
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
