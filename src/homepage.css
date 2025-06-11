@@ -27,9 +27,9 @@ nav {
 }
 
 nav a {
-  display: flex; /* Habilita flex dentro do link */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   
   background-color: #1c5052;
   color: rgb(255, 255, 255);
@@ -40,8 +40,8 @@ nav a {
   transition: background-color 0.3s, border-color 0.3s;
   font-weight: bold;
 
-  min-width: 100px; /* largura mínima para manter formato de botão */
-  height: 30px;     /* altura fixa para garantir alinhamento vertical */
+  min-width: 100px; 
+  height: 30px;     
   text-align: center;
 }
 
@@ -54,11 +54,16 @@ main {
   padding: 20px;
 }
 
-article{
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+article {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  font-size: 1.1em;
+  line-height: 1.75;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: justify;
 }
 
 h1 {
@@ -100,7 +105,7 @@ p {
 }
 
 p.FraseDeEfeito {
-  font-size: 1 em;
+  font-size: 1em;
   color: #00b1c9;
   font-style: oblique;
   margin: 20px 0;
@@ -113,6 +118,8 @@ p.FraseDeEfeito {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  flex: 1;
+  min-width: 300px;
 }
 
 .slides {
@@ -125,14 +132,17 @@ p.FraseDeEfeito {
   flex: 1 0 100%;
   height: 100%;
   display: flex;
-  justify-content: center;  /* alinha horizontalmente à esquerda */
-  align-items: center;      /* alinha verticalmente ao topo */
+  justify-content: center; 
+  align-items: center;     
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .slides img {
   width: auto;
   height: auto;
-  max-width: 75%;
+  max-width: 65%;
   max-height: 100%;
   object-fit: contain;
   display: block;
@@ -159,3 +169,17 @@ p.FraseDeEfeito {
 }
 
 
+.content-wrapper {
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.texto {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
