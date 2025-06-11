@@ -27,9 +27,9 @@ nav {
 }
 
 nav a {
-  display: flex; /* Habilita flex dentro do link */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 
   background-color: #1c5052;
   color: rgb(255, 255, 255);
@@ -40,8 +40,8 @@ nav a {
   transition: background-color 0.3s, border-color 0.3s;
   font-weight: bold;
 
-  min-width: 100px; /* largura mínima para manter formato de botão */
-  height: 30px;     /* altura fixa para garantir alinhamento vertical */
+  min-width: 100px; 
+  height: 30px;     
   text-align: center;
 }
 
@@ -303,7 +303,6 @@ p.FraseDeEfeito {
   }
 }
 
-/* ===== Bibliografia Layout ===== */
 .references {
   display: flex;
   flex-direction: column;

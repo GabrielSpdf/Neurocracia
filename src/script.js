@@ -16,11 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSlide = (currentSlide + 1) % totalSlides;
     showSlide(currentSlide);
   }
-
-  // Avança o slide automaticamente a cada 4 segundos
+ 
   const autoSlide = setInterval(nextSlide, 4000);
 
-  // Evento de clique nas bolinhas
   dots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
       currentSlide = i;
