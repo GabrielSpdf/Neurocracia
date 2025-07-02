@@ -13,6 +13,7 @@ body {
   padding: 0;
   background-color: #f2f2f2;
   color: #0a0c0d;
+  min-width: 850px;
 }
 
 header {
@@ -27,9 +28,9 @@ nav {
 }
 
 nav a {
-  display: flex; /* Habilita flex dentro do link */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   
   background-color: #1c5052;
   color: rgb(255, 255, 255);
@@ -40,8 +41,8 @@ nav a {
   transition: background-color 0.3s, border-color 0.3s;
   font-weight: bold;
 
-  min-width: 100px; /* largura mínima para manter formato de botão */
-  height: 30px;     /* altura fixa para garantir alinhamento vertical */
+  min-width: 100px; 
+  height: 30px;     
   text-align: center;
 }
 
@@ -55,7 +56,7 @@ main {
 }
 
 article {
-  max-width: 800px;
+  width: 50%;
   margin: 40px auto;
   padding: 30px 20px;
   font-size: 1.1em;
@@ -81,6 +82,12 @@ h2 {
   font-family: 'Lora', serif;
 }
 
+h3 {
+  color: #1c5052;
+  font-family: 'Lora', serif;
+  margin-top: 15px;
+}
+
 q.highlight {
   display: block;
   margin: 20px auto;
@@ -90,6 +97,17 @@ q.highlight {
   font-style: italic;
   color: #ffffff;
   border-radius: 10px;
+}
+
+article a{
+  color: #348e91;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #1c5052;
+  text-decoration: none;
 }
 
 cite.highlight {
@@ -113,8 +131,61 @@ p.FraseDeEfeito {
 
 .imagem-fixa-direita {
   position: absolute; 
-  width: 300px;
+  width: 15%;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  left: 80%;
+  transform: translateY(-100%);
+}
+
+.legenda-imagem-direita {
+  position: absolute; 
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  margin-top: 8px;
+  max-width: 15%;
+  left: 80%;
+}
+
+.imagem-fixa-esquerda {
+  position: absolute; 
+  width: 15%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  left: 5%;
+  transform: translateY(-100%);
+}
+
+.legenda-imagem-esquerda {
+  position: absolute; 
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  margin-top: 8px;
+  max-width: 15%;
+  left: 5%;
+}
+
+@media (max-width: 1200px) {
+  .imagem-fixa-direita,
+  .imagem-fixa-esquerda {
+    position: static;   
+    width: 50%;     
+    margin: 20px auto;  
+    display: block;    
+    transform: none;
+  }
+
+  .legenda-imagem-direita,
+  .legenda-imagem-esquerda {
+    position: static;   
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;    
+  }
 }
