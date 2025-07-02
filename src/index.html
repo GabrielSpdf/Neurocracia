@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neurocracia</title>
   <link rel="stylesheet" href="homepage.css">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -18,9 +22,7 @@
   </header>
 
   <main>
-    
-  
-    <article>
+    <article class="texto">
       <h1>Neurocracia - Artigos</h1>
 
       <p>
@@ -34,10 +36,11 @@
         Motivado pela disciplina de Padrões Web, o grupo de alunos da UTFPR busca responder a questão indagada pelo professor durante a aula:
         <q>Quem controla a internet e suas tecnologias? Ela é desenvolvida por quem? E para quem? Quem está de fora?</q>.
       </p>
-
     </article>
 
     <div class="carousel">
+      <button id="prevBtn" class="carousel-btn left">&#10094;</button>
+      <button id="nextBtn" class="carousel-btn right">&#10095;</button>
       <div class="slides">
         <a href="brainrot.html" title="Brainrot"><img src="img/brainrot.jpg" alt="Brainrot"></a>
         <a href="tendencias.html" title="Tendências Tecnológicas"><img src="img/tendencias.jpg" alt="Tendências"></a>
@@ -51,8 +54,7 @@
         <span class="dot"></span>
       </div>
     </div>
-</main>
-
+  </main>
 
   <script src="script.js"></script>
 </body>
