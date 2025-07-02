@@ -72,20 +72,19 @@ article {
   text-align: justify;
 }
 
-h1, h2 {
-  font-family: 'Lora', serif;
-  text-align: center;
-  margin: 20px 0;
-}
-
 h1 {
+  text-align: center;
   color: #348e91;
   font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
 }
 
 h2 {
   color: #1c5052;
   font-size: 2em;
+  margin-top: 20px;
+  font-family: 'Lora', serif;
 }
 
 p {
