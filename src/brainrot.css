@@ -144,6 +144,7 @@ p.FraseDeEfeito {
   max-width: 300px;
   pointer-events: none;
   z-index: 99;
+  cursor: pointer;
 }
 
 .popups {
@@ -154,6 +155,11 @@ p.FraseDeEfeito {
   pointer-events: none;
   z-index: 99;
 }
+
+.shake {
+  animation: shake 0.3s infinite;
+}
+
 
 .popup.dance {
 
@@ -167,35 +173,31 @@ p.FraseDeEfeito {
 
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  25% { transform: translate(-1px, -2px) rotate(-1deg); }
-  50% { transform: translate(-3px, 0px) rotate(1deg); }
-  75% { transform: translate(3px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -1px) rotate(1deg); }
+.party {
+  animation: party-hard 0.3s infinite !important;
 }
 
 #clear-button {
+  display: block;
+  margin: 40px auto; 
   background-color: #1c5052;
   color: white;
   border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  border-radius: 8px;
+  padding: 16px 28px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 20px;
-  animation: pulse 1.5s infinite;
+  z-index: 9999;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+#clear-button:hover {
+  background-color: #21797d;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(33, 121, 125, 0.6);
 }
 
 #calm-section {
@@ -206,6 +208,12 @@ p.FraseDeEfeito {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+
+#calm-section ul {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 20px;
 }
 
 .glitch-text {
@@ -227,8 +235,61 @@ p.FraseDeEfeito {
   animation: shake 0.3s infinite;
 }
 
+.clarity-list {
+  list-style-type: disc;       
+  list-style-position: inside; 
+  padding-left: 1.2rem;        
+  margin: 0 auto 1.2rem;       
+  max-width: 500px;            
+  text-align: left;            
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000; 
+  border-radius: 8px; 
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 /* Keyframes */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@keyframes party-hard {
+  0%   { transform: rotate(0deg) scale(1); }
+  20%  { transform: rotate(15deg) scale(1.1); }
+  40%  { transform: rotate(-15deg) scale(1.1); }
+  60%  { transform: rotate(10deg) scale(0.95); }
+  80%  { transform: rotate(-10deg) scale(1.05); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  25% { transform: translate(-1px, -2px) rotate(-1deg); }
+  50% { transform: translate(-3px, 0px) rotate(1deg); }
+  75% { transform: translate(3px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -1px) rotate(1deg); }
+}
 
 @keyframes glitch {
   0% { transform: skew(0deg); }
